@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="jmenoType">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="pocetType">
+    <xs:restriction base="xs:nonNegativeInteger">
+      <xs:maxExclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="detiType">
+    <xs:attribute name="pocet" type="pocetType" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="otecType">
+    <xs:sequence>
+      <xs:element name="jmeno" type="jmenoType"/>
+      <xs:element name="deti" type="detiType"/>
+    </xs:sequence>
+  </xs:complexType>
+ 
+  <xs:element name="otec" type="otecType"/> 
+</xs:schema>

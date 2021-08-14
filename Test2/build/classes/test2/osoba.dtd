@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/osoba.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE otec SYSTEM "osoba.dtd">
+
+    <otec>
+    ...
+    </otec>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT otec (jmeno|deti)*>
+<!ATTLIST otec
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT jmeno (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT deti EMPTY>
+<!ATTLIST deti
+    pocet CDATA #IMPLIED
+  >

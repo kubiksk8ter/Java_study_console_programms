@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="cisloType">
+    <xs:restriction base="xs:nonNegativeInteger">
+    </xs:restriction>
+  </xs:simpleType> 
+
+  <xs:simpleType name="jednotkovaCenaType">
+    <xs:restriction base="xs:nonNegativeInteger">
+    </xs:restriction>
+  </xs:simpleType> 
+
+  <xs:simpleType name="nazevOvoceType">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType> 
+
+  <xs:complexType name="nazevType">
+    <xs:simpleContent>
+      <xs:extension base="nazevOvoceType">
+        <xs:attribute name="jednotkovaCena" type="jednotkovaCenaType"
+                      use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="vahaType">
+    <xs:restriction base="xs:double">
+      <xs:minInclusive value="0" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="ovoceType">
+    <xs:sequence>
+      <xs:element name="nazev" type="nazevType"/>
+      <xs:element name="vaha" type="vahaType"/>
+    </xs:sequence>
+    <xs:attribute name="cislo" type="cisloType"
+                  use="required"/>
+  </xs:complexType>
+ 
+  <xs:complexType name="jidloType">
+    <xs:sequence>
+      <xs:element name="ovoce" type="ovoceType"
+                  minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="jidlo" type="jidloType"/> 
+</xs:schema>

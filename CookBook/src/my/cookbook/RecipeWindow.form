@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Vytvo&#x159;en&#xed; receptu"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="popisReceptuPanel" max="32767" attributes="0"/>
+                      <Component id="nazevReceptuPanel" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="IngrediencePanel" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="nazevReceptuPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="popisReceptuPanel" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="IngrediencePanel" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="popisReceptuPanel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Popis receptu"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="pridejImgBT" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="123" max="32767" attributes="0"/>
+                      <Component id="ulozBT" min="-2" pref="92" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jScrollPane1" min="-2" pref="258" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel2" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="pridejImgBT" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ulozBT" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="popisReceptuTA">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="pridejImgBT">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="P&#x159;idej obr&#xe1;zek"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pridejImgBTActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="ulozBT">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ulo&#x17e;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ulozBTActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel2">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                    <EtchetBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="imgLabel" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="imgLabel" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="imgLabel">
+                  <Properties>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="IngrediencePanel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Ingredience"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="nazevIngLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="mnozstviIngLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF1" linkSize="1" min="-2" pref="20" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF1" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF2" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF2" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF3" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF3" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF4" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF4" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF5" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF5" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF6" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF6" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF7" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF7" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="nazevIngTF8" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="mnozstviIngTF8" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="nazevIngTF10" linkSize="1" pref="0" max="32767" attributes="0"/>
+                                      <Component id="nazevIngTF9" linkSize="1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="nazevIngTF11" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF12" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF13" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF14" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF15" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF16" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF17" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF18" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF19" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="nazevIngTF20" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="mnozstviIngTF10" linkSize="1" pref="100" max="32767" attributes="0"/>
+                                  <Component id="mnozstviIngTF9" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="mnozstviIngTF12" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF13" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF14" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF15" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF16" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF17" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF18" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF19" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF20" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mnozstviIngTF11" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="mnozstviIngTF1" linkSize="2" max="32767" attributes="0"/>
+                          <Component id="nazevIngTF1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF2" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF2" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF3" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF3" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF4" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF4" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF5" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF5" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF6" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF6" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF7" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF7" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF8" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF8" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF9" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF9" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF10" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF10" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nazevIngTF11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mnozstviIngTF11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF12" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF13" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF13" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF15" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF16" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF16" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF17" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF17" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF18" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF18" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF19" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF19" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="mnozstviIngTF20" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nazevIngTF20" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="nazevIngLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="N&#xe1;zev"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="mnozstviIngLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Mno&#x17e;stv&#xed;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF1">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF2">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF3">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF4">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF5">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF6">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF7">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF8">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF9">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF10">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF1">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF2">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF3">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF4">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF5">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF6">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF7">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF8">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF9">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF10">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF11">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF11">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF12">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF13">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF14">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF15">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF16">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF17">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF18">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF19">
+            </Component>
+            <Component class="javax.swing.JTextField" name="mnozstviIngTF20">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF12">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF13">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF14">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF15">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF16">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF17">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF18">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF19">
+            </Component>
+            <Component class="javax.swing.JTextField" name="nazevIngTF20">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="nazevReceptuPanel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="N&#xe1;zev receptu"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="nazevReceptuTF" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="nazevReceptuTF" min="-2" max="-2" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JTextField" name="nazevReceptuTF">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

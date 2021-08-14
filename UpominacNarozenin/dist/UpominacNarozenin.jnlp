@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="UpominacNarozenin.jnlp">
+  <information>
+    <title>UpominacNarozenin</title>
+    <vendor>kuba</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\UpominacNarozenin-Preloader.jar" size="3150" download="progress" />
+    <jar href="UpominacNarozenin.jar" size="8735" download="eager" />
+    <jar href="lib\javafx-base-11.0.1-sources.jar" size="579426" download="eager" />
+    <jar href="lib\javafx-base-11.0.1-win.jar" size="750046" download="eager" />
+    <jar href="lib\javafx-controls-11.0.1-sources.jar" size="1262992" download="eager" />
+    <jar href="lib\javafx-controls-11.0.1-win.jar" size="2511136" download="eager" />
+    <jar href="lib\javafx-graphics-11.0.1-sources.jar" size="4878868" download="eager" />
+    <jar href="lib\javafx-graphics-11.0.1-win.jar" size="6019483" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="upominacnarozenin.UpominacNarozenin"  name="UpominacNarozenin"  preloader-class="upominacnarozenin.preloader.UpominacNarozenin_Preloader"/>
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="hodnotaType">
+        <xs:restriction base="xs:nonNegativeInteger" />
+    </xs:simpleType>
+    
+    <xs:simpleType name="kodMenyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CZK" />
+            <xs:enumeration value="USD" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="cenaType">
+        <xs:simpleContent>
+            <xs:extension base="hodnotaType">
+                <xs:attribute name="kodMeny" type="kodMenyType" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="menaType">
+        <xs:sequence>
+            <xs:element name="cena" type="cenaType" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="mena" type="menaType" />
+</xs:schema>

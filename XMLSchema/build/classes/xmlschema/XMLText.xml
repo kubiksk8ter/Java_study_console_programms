@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="XmlSchemaText.xsd">
+
+<odstavec>Nějaký text se <tucne>zvýrazněním</tucne>
+    nebo jiným <italika>zvýrazněním</italika>, aby to bylo
+    <tucne>pěkné</tucne>.
+</odstavec>
+
+</text>

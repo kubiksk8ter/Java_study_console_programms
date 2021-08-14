@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1250"?><jidlo>
+  <ovoce cislo="1">
+    <nazev jednotkovaCena="10">jablka</nazev>
+    <vaha>2.5</vaha>
+  </ovoce> 
+  <ovoce cislo="2">
+    <nazev jednotkovaCena="25">banány</nazev>
+    <vaha>2</vaha>
+  </ovoce> 
+  <ovoce cislo="3">
+    <nazev jednotkovaCena="19">grapefruity</nazev>
+    <vaha>0.75</vaha>
+  </ovoce> 
+  <ovoce cislo="4">
+    <nazev jednotkovaCena="32">švestky sušené</nazev>
+    <vaha>1.8</vaha>
+  </ovoce> 
+</jidlo>

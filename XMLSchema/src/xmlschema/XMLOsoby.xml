@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<osoby xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="XmlSchemaOsoby.xsd">
+    <osoba pohlavi="muž">      
+        <jmeno>           
+            <titul xsi:nil="true" /> 
+            <!--titul> Ing </titul-->                     
+            <krestni>Jakub</krestni>
+            <krestni>Karel</krestni>
+            <prijmeni>Holecek</prijmeni>
+        </jmeno>
+        <kontakt>
+            <bydliste>Vlkova 5</bydliste>
+            <email>kubiksk8te@rseznam.cz</email>
+            <telefon>602 384 290</telefon>          
+        </kontakt>
+        <osobniUdaje>
+            <datumNarozeni>1986-11-12</datumNarozeni>
+            <vek>33</vek>
+            <vaha kg="120" />
+            <vyska cm="185" />
+            <stav>
+                <!--svobodny /-->
+                <zenaty>2010-11-12</zenaty>
+                <zenaty>2015-10-12</zenaty>
+            </stav>
+        </osobniUdaje>
+    </osoba>
+</osoby>
+

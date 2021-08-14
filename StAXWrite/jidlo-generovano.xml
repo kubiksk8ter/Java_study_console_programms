@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- přehled šmakovních dobrůtek-->
+<jidlo>
+ <ovoce cislo="1">
+   <nazev jednotkovaCena="39">ovoce 1 &amp;&lt;</nazev>
+   <vaha>9.0</vaha>
+ </ovoce>
+ <ovoce cislo="2">
+   <nazev jednotkovaCena="17">ovoce 2 &amp;&lt;</nazev>
+   <vaha>6.0</vaha>
+ </ovoce>
+ <ovoce cislo="3">
+   <nazev jednotkovaCena="19">ovoce 3 &amp;&lt;</nazev>
+   <vaha>9.5</vaha>
+ </ovoce>
+</jidlo>

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<xs:simpleType name="titulType">
+    <xs:restriction base="xs:token">
+        <xs:minLength value="2" />
+        <xs:maxLength value="6" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="krestniType"> 
+    <xs:restriction base="xs:string"> 
+        <xs:maxLength value="10" />
+        <xs:minLength value="3" />
+        <xs:pattern value="\p{Lu}\p{Ll}+" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="prijmeniType"> 
+    <xs:restriction base="xs:string"> 
+        <xs:maxLength value="10" />
+        <xs:minLength value="3" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="telefonType"> 
+    <xs:restriction base="xs:token"> 
+        <xs:pattern value="\d{3} \d{3} \d{3}" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="emailType"> 
+    <xs:restriction base="xs:anyURI"> </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="bydlisteType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\p{Lu}\p{Ll}+ \d+" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="datumNarozeniType"> 
+    <xs:restriction base="xs:date"> </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="vekType"> 
+    <xs:restriction base="xs:unsignedByte"> </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="kg"> 
+    <xs:restriction base="xs:nonNegativeInteger"> 
+        <xs:minExclusive value="2" />
+        <xs:maxExclusive value="150" />
+    </xs:restriction>    
+</xs:simpleType>
+
+<xs:simpleType name="cm"> 
+    <xs:restriction base="xs:nonNegativeInteger"> 
+        <xs:minExclusive value="30" />
+        <xs:maxExclusive value="250" />
+    </xs:restriction>    
+</xs:simpleType>
+
+<xs:complexType name="vahaType">
+    <xs:attribute name="kg" type="kg" use="required" />
+</xs:complexType>
+
+<xs:complexType name="vyskaType">
+    <xs:attribute name="cm" type="cm" use="required" />
+</xs:complexType>
+
+<!--xs:simpleType name="svobodnyType">
+    <xs:restriction base="xs:token" />
+</xs:simpleType-->
+
+<xs:complexType name="svobodnyType" />
+
+<xs:simpleType name="zenatyType">
+    <xs:restriction base="xs:date" />
+</xs:simpleType>
+
+<xs:simpleType name="vdanaType">
+    <xs:restriction base="xs:date" />
+</xs:simpleType>
+
+<xs:complexType name="jmenoType"> 
+    <xs:sequence>
+        <xs:element name="titul" type="titulType" nillable="true" /> 
+        <xs:element name="krestni" type="krestniType" 
+        minOccurs="1" maxOccurs="2" /> 
+        <xs:element name="prijmeni" type="prijmeniType" />    
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="kontaktType"> 
+    <xs:all> 
+        <xs:element name="telefon" type="telefonType" /> 
+        <xs:element name="email" type="emailType" minOccurs="0" /> 
+        <xs:element name="bydliste" type="bydlisteType" minOccurs="0" />   
+    </xs:all>
+</xs:complexType>
+
+<xs:complexType name="stavType">
+    <xs:choice>
+        <xs:element name="svobodny" type="svobodnyType" />
+        <xs:element name="zenaty" type="zenatyType" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element name="vdana" type="vdanaType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:choice>
+</xs:complexType>
+
+<xs:complexType name="osobniUdajeType"> 
+    <xs:sequence> 
+        <xs:element name="datumNarozeni" type="datumNarozeniType" /> 
+        <xs:element name="vek" type="vekType" />  
+        <xs:element name="vaha" type="vahaType" />
+        <xs:element name="vyska" type="vyskaType" />  
+        <xs:element name="stav" type="stavType" /> 
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="pohlaviType">
+    <xs:restriction base="xs:string" >
+        <xs:enumeration value="muž" />
+        <xs:enumeration value="žena" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="osobaType">    
+    <xs:sequence>
+        <xs:element name="jmeno" type="jmenoType" />
+        <xs:element name="kontakt" type="kontaktType" />
+        <xs:element name="osobniUdaje" type="osobniUdajeType" />
+    </xs:sequence>
+    <xs:attribute name="pohlavi" type="pohlaviType" use="required" />
+</xs:complexType>
+
+<xs:complexType name="osobyType">
+    <xs:sequence>
+        <xs:element name="osoba" type="osobaType" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:element name="osoby" type="osobyType" />
+
+</xs:schema>

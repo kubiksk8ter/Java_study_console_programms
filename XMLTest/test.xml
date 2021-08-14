@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<obezitologie>
+  <personal>
+    <lekar>
+      <jmeno>
+        <krestni>Pavel</krestni>
+        <prijmeni>Petr</prijmeni>
+      </jmeno> 
+      <telefon>377 123 456</telefon>
+    </lekar>
+    <sestra>
+      <jmeno>
+        <krestni>Vanda</krestni>
+        <prijmeni>Alexandra</prijmeni>
+      </jmeno> 
+      <telefon></telefon>
+    </sestra>
+  </personal>
+  <leceneOsoby>
+    <nadvaha>
+      <pacient pohlavi="muž">
+        <jmeno>
+          <krestni>Jiří</krestni>
+          <prijmeni>Štíhlý</prijmeni>
+        </jmeno> 
+        <vaha jednotka="kg">150</vaha>
+        <vyska jednotka="cm">150</vyska>
+      </pacient>
+    </nadvaha>
+    <podvyziva>
+      <pacient pohlavi="žena">
+        <jmeno>
+          <krestni>Otýlie</krestni>
+          <prijmeni>Otylá</prijmeni>
+        </jmeno> 
+        <vaha jednotka="kg">45,5</vaha>
+        <vyska jednotka="cm">170</vyska>
+      </pacient>
+    </podvyziva>
+  </leceneOsoby>
+</obezitologie>

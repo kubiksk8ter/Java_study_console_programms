@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1250" standalone="no"?>
+<jidlo>
+  <ovoce cislo="-10">
+    <nazev jednotkovaCena="30">švestky</nazev>
+    <vaha>1.5</vaha>
+  </ovoce>
+  <ovoce cislo="-10">
+    <nazev jednotkovaCena="30">švestky</nazev>
+    <vaha>1.5</vaha>
+  </ovoce>
+</jidlo>
